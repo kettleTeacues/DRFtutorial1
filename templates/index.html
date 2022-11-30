@@ -157,7 +157,7 @@
                 // 登録・更新ボタン押下時に呼び出されるメソッド
                 submitSave: function() {
                     this.clearMessages();
-                    api({
+                    api.request({
                         // 登録済みかどうかでHTTPメソッドとエンドポイントを切り替える
                         method: this.isCreated
                             ? "put"
